@@ -100,7 +100,8 @@ function consultarCep() {
     fetch(url)
       .then((response) => response.json())
       .then((jsonBody) => {
-        if (jsonBody.erro === true) {git chec
+
+        if (jsonBody.erro === true) {
           alert("CEP nao encontrado!");
         } else {
           document.getElementById("dados").innerHTML =
